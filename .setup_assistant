@@ -1,0 +1,25 @@
+moveit_setup_assistant_config:
+  urdf:
+    package: g1_description
+    relative_path: urdf/g1_29dof.urdf
+  srdf:
+    relative_path: config/g1_29dof.srdf
+  package_settings:
+    author_name: Chan Jin You
+    author_email: jinyouchan4000@gmail.com
+    generated_timestamp: 1772880062
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity
+  modified_urdf:
+    xacros:
+      - control_xacro
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity
