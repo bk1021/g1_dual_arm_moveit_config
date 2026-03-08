@@ -54,6 +54,24 @@
         <joint name="right_wrist_roll_joint" value="0"/>
         <joint name="right_wrist_yaw_joint" value="0"/>
     </group_state>
+    <group_state name="left_arm_relax" group="left_arm">
+        <joint name="left_elbow_joint" value="1.5"/>
+        <joint name="left_shoulder_pitch_joint" value="0"/>
+        <joint name="left_shoulder_roll_joint" value="0.15"/>
+        <joint name="left_shoulder_yaw_joint" value="0"/>
+        <joint name="left_wrist_pitch_joint" value="0"/>
+        <joint name="left_wrist_roll_joint" value="0"/>
+        <joint name="left_wrist_yaw_joint" value="0"/>
+    </group_state>
+    <group_state name="right_arm_relax" group="right_arm">
+        <joint name="right_elbow_joint" value="1.5"/>
+        <joint name="right_shoulder_pitch_joint" value="0"/>
+        <joint name="right_shoulder_roll_joint" value="-0.15"/>
+        <joint name="right_shoulder_yaw_joint" value="0"/>
+        <joint name="right_wrist_pitch_joint" value="0"/>
+        <joint name="right_wrist_roll_joint" value="0"/>
+        <joint name="right_wrist_yaw_joint" value="0"/>
+    </group_state>
     <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
     <end_effector name="left_hand_ee" parent_link="left_wrist_yaw_link" group="left_hand" parent_group="left_arm"/>
     <end_effector name="right_hand_ee" parent_link="right_wrist_yaw_link" group="right_hand" parent_group="right_arm"/>

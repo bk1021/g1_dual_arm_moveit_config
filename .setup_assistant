@@ -7,7 +7,7 @@ moveit_setup_assistant_config:
   package_settings:
     author_name: Chan Jin You
     author_email: jinyouchan4000@gmail.com
-    generated_timestamp: 1772880062
+    generated_timestamp: 1772976477
   control_xacro:
     command:
       - position
