@@ -3,7 +3,7 @@
     <xacro:arg name="initial_positions_file" default="initial_positions.yaml" />
 
     <!-- Import g1_29dof urdf file -->
-    <xacro:include filename="$(find g1_description)/urdf/g1_29dof.urdf" />
+    <xacro:include filename="$(find g1_description)/urdf/g1_gripper.urdf.xacro" />
 
     <!-- Import control_xacro -->
     <xacro:include filename="g1_29dof.ros2_control.xacro" />

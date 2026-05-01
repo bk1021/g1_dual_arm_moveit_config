@@ -13,6 +13,11 @@ joint_limits:
     max_velocity: 37.0
     has_acceleration_limits: true
     max_acceleration: 5.0
+  left_gripper_pinion_joint:
+    has_velocity_limits: true
+    max_velocity: 25.0
+    has_acceleration_limits: true
+    max_acceleration: 5.0
   left_shoulder_pitch_joint:
     has_velocity_limits: true
     max_velocity: 37.0
@@ -46,6 +51,11 @@ joint_limits:
   right_elbow_joint:
     has_velocity_limits: true
     max_velocity: 37.0
+    has_acceleration_limits: true
+    max_acceleration: 5.0
+  right_gripper_pinion_joint:
+    has_velocity_limits: true
+    max_velocity: 25.0
     has_acceleration_limits: true
     max_acceleration: 5.0
   right_shoulder_pitch_joint:

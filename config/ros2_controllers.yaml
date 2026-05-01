@@ -6,10 +6,14 @@ controller_manager:
     left_arm_controller:
       type: joint_trajectory_controller/JointTrajectoryController
 
-
     right_arm_controller:
       type: joint_trajectory_controller/JointTrajectoryController
 
+    left_gripper_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+
+    right_gripper_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
 
     joint_state_broadcaster:
       type: joint_state_broadcaster/JointStateBroadcaster
@@ -46,3 +50,21 @@ right_arm_controller:
       - position
       - velocity
     allow_nonzero_velocity_at_trajectory_end: true
+left_gripper_controller:
+  ros__parameters:
+    joints:
+      - left_gripper_pinion_joint
+    command_interfaces:
+      - position
+    state_interfaces:
+      - position
+      - velocity
+right_gripper_controller:
+  ros__parameters:
+    joints:
+      - right_gripper_pinion_joint
+    command_interfaces:
+      - position
+    state_interfaces:
+      - position
+      - velocity
